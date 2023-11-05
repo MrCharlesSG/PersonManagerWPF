@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:PersonManager"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ImageBrush x:Key="GradientBackground"
+                     ImageSource="/Assets/gradient.png" />
     </Application.Resources>
 </Application>

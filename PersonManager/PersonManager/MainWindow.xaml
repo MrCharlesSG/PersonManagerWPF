@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PersonManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
-
+        <Frame 
+            x:Name="frame"
+            NavigationUIVisibility="Hidden"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            />
     </Grid>
 </Window>

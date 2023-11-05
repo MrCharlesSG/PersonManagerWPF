@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\App.xaml
-11407045341
+3-833631075
 
-51867698963
-194183970531
-MainWindow.xaml;
+14-649371969
+1952063582424
+EditPersonPage.xaml;ListPeoplePage.xaml;MainWindow.xaml;
 
-False
+True
 
