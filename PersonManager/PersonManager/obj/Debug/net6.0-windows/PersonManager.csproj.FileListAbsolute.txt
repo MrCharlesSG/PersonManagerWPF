@@ -31,3 +31,16 @@ C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Deb
 C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ListPeoplePage.g.cs
 C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ListPeoplePage.baml
 C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\EditPersonPage.g.cs
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\EditPersonPage.baml
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ProfilePersonPage.g.cs
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ProfilePersonPage.baml
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ListClassPage.g.cs
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ListClassPage.baml
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\EditClassPage.g.cs
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\EditClassPage.baml
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ProfileClassPage.g.cs
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\ProfileClassPage.baml
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\StudentClassPage.g.cs
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\StudentClassPage.baml
+C:\Users\cserr\source\repos\PersonManagerWPF\PersonManager\PersonManager\obj\Debug\net6.0-windows\PersonManager_Content.g.cs

@@ -7,21 +7,51 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="EditClassPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EditPersonPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListClassPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ListPeoplePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ProfileClassPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProfilePersonPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StudentClassPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="EditClassPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="EditPersonPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListClassPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ListPeoplePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProfileClassPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProfilePersonPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StudentClassPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,0 +1,58 @@
+﻿<local:ClassFramedPage x:Class="PersonManager.StudentClassPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonManager"
+        mc:Ignorable="d"
+        Title="StudentClassPage" Height="450" Width="600">
+    <Grid Background="{StaticResource GradientBackgroundClass}" x:Name="grid">
+        <ListView
+    Height="275"
+    Margin="97,88,98,88"
+    x:Name="lvClasses"
+    AlternationCount="2">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick" />
+                    <Setter Property="Background" Value="LightBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="ListView.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="White" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" Value="CadetBlue" />
+                        </MultiTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn x:Name="gvcFirst" Width="100" Header="Name" DisplayMemberBinding="{Binding SubjectName}"/>
+                    <GridViewColumn x:Name="gvcSecond" Width="100" Header="Start Time"/>
+                    <GridViewColumn x:Name="gvcThird" Width="100" Header="End Time"/>
+                    <GridViewColumn x:Name="gvcFourth" Width="100" Header="Room"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label
+            x:Name="lbTitle"
+     FontSize="30" 
+     Foreground="White" 
+     FontWeight="Bold" Content="CLASSES" HorizontalAlignment="Left" Margin="124,28,0,0" VerticalAlignment="Top" Height="52" Width="373"/>
+
+
+        <Button
+    Foreground="Transparent" 
+    Background="Transparent" 
+    x:Name="BtnBack" 
+    Click="BtnBack_Click"
+    HorizontalAlignment="Left" Margin="76,39,0,0" VerticalAlignment="Top" Height="30" Width="48">
+            <Image Source="/Assets/back.png"/>
+        </Button>
+        <Button Content="Add" x:Name="btnAdd" Click="BtnAdd_Click" Background="DarkSeaGreen" HorizontalAlignment="Center" Margin="0,368,0,0" VerticalAlignment="Top" Height="27" Width="402"/>
+    </Grid>
+</local:ClassFramedPage>

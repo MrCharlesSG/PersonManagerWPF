@@ -5,6 +5,8 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ImageBrush x:Key="GradientBackground"
-                     ImageSource="/Assets/gradient.png" />
+                    ImageSource="/Assets/gradient4.jpg" />
+        <ImageBrush x:Key="GradientBackgroundClass"
+            ImageSource="/Assets/gradient7.jpg" />
     </Application.Resources>
 </Application>

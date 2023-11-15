@@ -5,19 +5,19 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PersonManager"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="600"
       Title="ListPeoplePage">
 
     <Grid Background="{StaticResource GradientBackground}">
-        <ListView 
-            Width="500"
+        <ListView
+            Width="550"
             Height="275"
-            Margin="50, 45, 50, 130"
+            Margin="25,45,25,130"
             x:Name="lvPeople"
             AlternationCount="2">
             <ListView.ItemContainerStyle>
                 <Style TargetType="{x:Type ListViewItem}">
-                    <EventSetter Event="MouseDoubleClick" Handler="BtnEdit_Click" />
+                    <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick" />
                     <Setter Property="Background" Value="LightBlue" />
                     <Style.Triggers>
                         <Trigger Property="ListView.AlternationIndex" Value="1">
@@ -25,7 +25,7 @@
                         </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
-                                <Condition Property="IsSelected" Value="True" />
+                                <Condition Property="IsSelected" Value="True"/>
                             </MultiTrigger.Conditions>
                             <Setter Property="Background" Value="CadetBlue" />
                         </MultiTrigger>
@@ -34,23 +34,20 @@
             </ListView.ItemContainerStyle>
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="126" Header="FirstName"
-                                    DisplayMemberBinding="{Binding FirstName}"
-                                    />
-                    <GridViewColumn Width="126" Header="LastName"
-                                    DisplayMemberBinding="{Binding LastName}"
-                                    />
-                    <GridViewColumn Width="126" Header="Age"
-                                    DisplayMemberBinding="{Binding Age}"
-                                    />
-                    <GridViewColumn Width="126" Header="Email">
+                    <GridViewColumn Width="100" Header="First name"
+                        DisplayMemberBinding="{Binding FirstName}"/>
+                    <GridViewColumn Width="100" Header="Last name"
+                        DisplayMemberBinding="{Binding LastName}"/>
+                    <GridViewColumn Width="50" Header="Age"
+                        DisplayMemberBinding="{Binding Age}"/>
+                    <GridViewColumn Width="100" Header="Email">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Email}"
                                            TextDecorations="Underline"
                                            Foreground="Black">
                                     <TextBlock.ToolTip>
-                                        <Image x:Name="picture" 
+                                        <Image x:Name="picture"
                                                Width="60"
                                                Height="60"
                                                Source="{Binding Image}" />
@@ -59,27 +56,49 @@
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
+                    <GridViewColumn Width="100" x:Name="gvcAditional1" Header="Aditional1" />
+                    <GridViewColumn Width="100" x:Name="gvcAditional2" Header="Aditional2" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Add"
-                x:Name="btnAdd"
-                Foreground="White"
-                Background="Green"
-                Click="BtnAdd_Click"
-                HorizontalAlignment="Left" Margin="150,348,0,0" VerticalAlignment="Top" Height="43" Width="142"/>
-        <Button Content="Edit"
-                x:Name="btnEdit"
-                Foreground="White"
-                Background="DarkViolet"
-                Click="BtnEdit_Click"
-                 HorizontalAlignment="Left" Margin="508,348,0,0" VerticalAlignment="Top" Height="43" Width="142"/>
-        <Button Content="Delete"
-                x:Name="btnDelete"
-                Foreground="White"
-                Background="Red"
-                Click="BtnDelete_Click"
-                HorizontalAlignment="Center" Margin="0,348,0,0" VerticalAlignment="Top" Height="43" Width="142"/>
+        <Button 
+            Content="Add"
+            x:Name="btnAdd"
+            Foreground="White"
+            Background="Green"
+            Click="BtnAdd_Click"
+                
+                HorizontalAlignment="Left" Margin="25,370,0,0" VerticalAlignment="Top" Width="153" Height="35"/>
+        <Button 
+            
+            Content="Edit"
+            x:Name="btnEdit"
+            Foreground="White"
+            Background="Black"
+            Click="BtnEdit_Click"
+                
+                
+                HorizontalAlignment="Center" Margin="0,370,0,0" VerticalAlignment="Top" Width="152" Height="35"/>
+        <Button 
+            Content="Delete"
+            x:Name="btnDelete"
+            Foreground="White"
+            Background="Blue"
+            Click="BtnDelete_Click"
+                
+                HorizontalAlignment="Left" Margin="422,370,0,0" VerticalAlignment="Top" Width="153" Height="35" RenderTransformOrigin="0.5,-0.12"/>
+        <Button Content="All" x:Name="btn_All" HorizontalAlignment="Left" Margin="168,20,0,0" VerticalAlignment="Top" Width="66" Click="Btn_All_Click"/>
+        <Button Content="Employees" x:Name="btn_Employees" HorizontalAlignment="Left" Margin="366,20,0,0" VerticalAlignment="Top" Width="66" Click="Btn_Employees_Click"/>
+        <Button Content="Teachers" x:Name="btn_Teachers" HorizontalAlignment="Left" Margin="300,20,0,0" VerticalAlignment="Top" Width="66" Click="Btn_Teachers_Click"/>
+        <Button Content="Students" x:Name="btn_Students"  HorizontalAlignment="Left" Margin="234,20,0,0" VerticalAlignment="Top" Width="66" Click="Btn_Students_Click"/>
+        <Button 
+            Content="Classes"
+            x:Name="btnClassesView"
+            Foreground="Black"
+            Background="Beige"
+            Click="BtnClassesView_Click"
+                
+            HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" Width="264" Height="25"/>
 
     </Grid>
 </local:FramedPage>

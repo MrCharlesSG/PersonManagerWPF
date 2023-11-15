@@ -10,13 +10,12 @@ namespace PersonManager
 {
     public class FramedPage : Page
     {
-        public FramedPage(PersonViewModel personViewModel)
+        public FramedPage(PersonViewModel? personViewModel)
         {
             PersonViewModel = personViewModel;
         }
 
+        public PersonViewModel? PersonViewModel { get; }
         public Frame? Frame { get; set; }
-
-        public PersonViewModel PersonViewModel { get; }
     }
 }

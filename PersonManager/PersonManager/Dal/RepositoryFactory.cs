@@ -10,7 +10,6 @@ namespace PersonManager.Dal
     {
         private static readonly Lazy<IRepository> repository
             = new(() => new SqlRepository());
-
-        public static IRepository GetRepository() =>  repository.Value;
+        public static IRepository GetRepository() => repository.Value;
     }
 }

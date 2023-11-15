@@ -5,11 +5,26 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Icon\iconPersonManager.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Assets\back.png" />
-    <None Remove="Assets\gradient.png" />
+    <None Remove="Assets\gradien5.jpg" />
+    <None Remove="Assets\gradient4.jpg" />
+    <None Remove="Assets\gradient6.jpg" />
+    <None Remove="Assets\gradient7.jpg" />
+    <None Remove="Assets\gradient8.jpg" />
+    <None Remove="Assets\iconPersonManager.png" />
+    <None Remove="Assets\student_icon3.png" />
+    <None Remove="Assets\student_icon4.png" />
+    <None Remove="Assets\subjects.png" />
+    <None Remove="Icon\icon2PersonManager.ico" />
+    <None Remove="Icon\icon3PersonManager.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon\iconPersonManager.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,7 +33,17 @@
 
   <ItemGroup>
     <Resource Include="Assets\back.png" />
-    <Resource Include="Assets\gradient.png" />
+    <Resource Include="Assets\gradien5.jpg" />
+    <Resource Include="Assets\gradient4.jpg" />
+    <Resource Include="Assets\gradient6.jpg" />
+    <Resource Include="Assets\gradient7.jpg" />
+    <Resource Include="Assets\gradient8.jpg" />
+    <Resource Include="Assets\iconPersonManager.png" />
+    <Resource Include="Assets\student_icon3.png" />
+    <Resource Include="Assets\student_icon4.png" />
+    <Resource Include="Assets\subjects.png" />
+    <Resource Include="Icon\icon2PersonManager.ico" />
+    <Resource Include="Icon\icon3PersonManager.ico" />
   </ItemGroup>
 
 </Project>
