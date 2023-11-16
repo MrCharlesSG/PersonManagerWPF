@@ -75,6 +75,7 @@ By clicking the button `Teacher` the user can select the teacher for the new cla
 
 ### Delete
 There is no retrictions for deleting.
+
 <img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/616b589a-36ba-450e-a9f2-4a15021031bb">
 
 ### Class profile
@@ -98,5 +99,19 @@ The user can not select a student that its already in the class.
 <img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/325e8add-c3d3-4f13-97aa-8c90f9e959a8">
 <img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/9ad4a44f-d20d-4b47-a238-30ffc3c408c3">
 <img width="407" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/49777cac-3626-479b-a836-02f5c3eee5b5">
+<img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/afe463c0-e14a-494d-b73b-03a805c157ea">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/bccc33da-6f91-4366-aeba-0fafc869c771">
 
+#### Delete Student
 
+<img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/6f358b26-f94b-40f0-8644-4331ccb73da1">
+<img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/3a819bbc-2955-427b-87e3-3b89111d2e1d">
+
+#### Edit Class
+
+<img width="438" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/9f4a79b5-182c-4b7c-b09f-263088f8b0db">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/cbe190ce-c931-4d0d-acca-2db0f447239b">
+<img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/e805f540-c6fe-4479-b055-6c86cb0a82cf">
+<img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/d1f43da1-3a9e-48e3-a2c9-5c047d536be6">
+
+## 
