@@ -1,5 +1,3 @@
-* auto-gen TOC:
-{:toc}
 # PersonManagerWPF
 Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor **Daniel Bele**.
 ## Functionalities
@@ -118,6 +116,7 @@ The user can not select a student that its already in the class.
 
 ## Problems Faced
 I was a bit lost until I finally understood the Model-View-ViewModel pattern, which I think is very powerfull due to its is easier to implements observers (in my experience). Connecting to the database and creating the scripts was also quite a mess, although I already knew how to make procedures, I had to refresh my mind because has been a year since I didn't do anything. 
+
 My bigest problem was the edit part. Although it updates me the data base, it didn't update me the ViewModel. As i didn't know how to fixed (becouse I was literally changing the element of the observable list) and I was I solved in a simple way but very effective. Instead of just going back in the frames (that was what I was doing), I redirect to the list classes/people view wich will get again from the database the classes/people, that if you remember, I was  updating correctly.
 
 ## Repository Content
