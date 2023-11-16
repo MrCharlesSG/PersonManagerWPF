@@ -1,10 +1,7 @@
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
+* auto-gen TOC:
+{:toc}
 # PersonManagerWPF
-Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor Daniel Bele.
+Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor **Daniel Bele**.
 ## Functionalities
 The correct name of the application would be something like school manager, because user are able, not only to manage people information, but also the classes the organization has, an the rellations classes-person.
 ### Person
@@ -119,4 +116,12 @@ The user can not select a student that its already in the class.
 <img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/e805f540-c6fe-4479-b055-6c86cb0a82cf">
 <img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/d1f43da1-3a9e-48e3-a2c9-5c047d536be6">
 
-## 
+## Problems Faced
+I was a bit lost until I finally understood the Model-View-ViewModel pattern, which I think is very powerfull due to its is easier to implements observers (in my experience). Connecting to the database and creating the scripts was also quite a mess, although I already knew how to make procedures, I had to refresh my mind because has been a year since I didn't do anything. 
+My bigest problem was the edit part. Although it updates me the data base, it didn't update me the ViewModel. As i didn't know how to fixed (becouse I was literally changing the element of the observable list) and I was I solved in a simple way but very effective. Instead of just going back in the frames (that was what I was doing), I redirect to the list classes/people view wich will get again from the database the classes/people, that if you remember, I was  updating correctly.
+
+## Repository Content
+This repository contains:
+  - Code of the project
+  - This Readme
+  - All the scripts for the Data Base. As it was my first project making "real" scripts for a data base they are completly desorganized.
