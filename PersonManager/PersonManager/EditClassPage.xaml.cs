@@ -79,11 +79,18 @@ namespace PersonManager
                 }
                 else
                 {
-                    int i = ClassViewModel!.Classes.IndexOf(Subject);
-                    ClassViewModel!.Classes[i] = Subject;
+                    ClassViewModel!.Update(Subject);
                 }
-                Frame?.NavigationService.GoBack();
+                OpenListClass();
             }
+        }
+
+        private void OpenListClass()
+        {
+            Frame?.Navigate(new ListClassPage(ClassViewModel!)
+            {
+                Frame = Frame
+            });
         }
 
         private bool IsValidForm()

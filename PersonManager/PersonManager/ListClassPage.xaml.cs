@@ -32,6 +32,16 @@ namespace PersonManager
             lvClasses.ItemsSource = classViewModel.Classes;
             if (person != null) InitializeWithPerson();
             else InitializeWithOutPerson();
+            InitializeBackButton();
+        }
+
+        private void InitializeBackButton()
+        {
+            if(Person == null)
+            {
+                BtnBack.Background = Brushes.White;
+                btniBack.Source = new BitmapImage(new Uri("pack://application:,,,/Assets/student_icon4.png"));
+            }
         }
 
         private void InitializeWithOutPerson()
@@ -60,7 +70,17 @@ namespace PersonManager
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-            Frame?.NavigationService.GoBack();
+            if(Person != null)
+            {
+                Frame?.NavigationService.GoBack();
+            }
+            else
+            {
+                Frame?.Navigate(new ListPeoplePage(new PersonViewModel())
+                {
+                    Frame = Frame
+                });
+            }
         }
 
         private void ListViewItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)

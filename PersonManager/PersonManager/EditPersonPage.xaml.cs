@@ -44,7 +44,7 @@ namespace PersonManager
             tbEmail.Text = Person == null ? "" : person!.Email;
             tbFirstName.Text = Person == null ? "" : person!.FirstName;
             tbLastName.Text = Person == null ? "" : person!.LastName;
-            picture.Source = Person == null ? null : ImageUtils.ByteArrayToBitmapImage(person.Picture!);
+            picture.Source = Person == null ? null : ImageUtils.ByteArrayToBitmapImage(person!.Picture!);
         }
 
         private void InitializeSpecitalitation()
@@ -53,11 +53,11 @@ namespace PersonManager
             {
                 DisableCheckBoxes();
                 if(Person is Student )
-                    SetStudentInterface((Student?)Person);
+                    SetStudentInterface((Student)Person);
                 else if( Person is Teacher )
-                    SetTeacherInterface((Teacher?)Person);
+                    SetTeacherInterface((Teacher)Person);
                 else
-                    SetEmployeeInterface((Employee?)Person);
+                    SetEmployeeInterface((Employee)Person);
             }
             else
             {
@@ -85,8 +85,16 @@ namespace PersonManager
                 {
                     PersonViewModel!.UpdatePerson(newPerson);
                 }
-                Frame?.NavigationService.GoBack();
+                OpenListPeople();
             }
+        }
+
+        private void OpenListPeople()
+        {
+            Frame?.Navigate(new ListPeoplePage(PersonViewModel!)
+            {
+                Frame = Frame
+            });
         }
 
         private Person? GetPerson()

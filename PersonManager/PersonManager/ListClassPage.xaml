@@ -13,7 +13,7 @@
             x:Name="BtnBack" 
             Click="BtnBack_Click"
             HorizontalAlignment="Left" Margin="76,39,0,0" VerticalAlignment="Top" Height="30" Width="48">
-            <Image Source="/Assets/back.png"/>
+            <Image x:Name="btniBack" Source="/Assets/back.png"/>
         </Button>
         <Label
              FontSize="40" 
