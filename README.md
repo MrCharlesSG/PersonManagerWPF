@@ -1,9 +1,15 @@
 # PersonManagerWPF
+
 Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor **Daniel Bele**. For the server and database I use Azure.
+
 ## Functionalities
+
 The correct name of the application would be something like school manager, because user are able, not only to manage people information, but also the classes the organization has, an the rellations classes-person.
+
 ### Person
+
 #### List People
+
 In the app, user is able to list all the people inside the application. User can list all students, employees, teachers and all people. As you can see, when user hovers the email, the image of the person is shown.
 
 <img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/92f6b459-f2c9-4465-8885-bf8e794a7fc7">
@@ -11,6 +17,7 @@ In the app, user is able to list all the people inside the application. User can
 <img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/3325ddd8-9eae-4e79-82f7-c820632adcf3">
 
 #### Add Person
+
 The only restriction the user has, is that every texbox should be filled with the correct type (there is also an email checker).
 
 <img width="432" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/2b09d46f-18f0-4c3b-9996-c5432112a10a">
@@ -20,11 +27,13 @@ The only restriction the user has, is that every texbox should be filled with th
 
 
 #### Person Profile
+
 By Double Click on an element of the list, user will see al the atributes of the selected-person. In that view the user can edit, delete or see the classes of the person. In every view but the list people view, there is a button to go back.
 
 <img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/f3ac6cd1-c97d-4c91-b9b0-1985505bc69c">
 
 ##### Edit Person
+
 In the profile person view and in the list people view the user can edit the selected person.
 
 <img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/dfd5e4ff-2669-4116-b8be-65c8df227c52">
@@ -32,6 +41,7 @@ In the profile person view and in the list people view the user can edit the sel
 <img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/2da298fe-7270-43a7-8c93-ac15f4bf5966">
 
 ##### Delete Person
+
 In the profile view user is also able to delete selected person. Can also be done through the list people view.
 
 <img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/3ca61b23-a69c-4863-a894-2d0915874b48">
@@ -43,6 +53,7 @@ If the teacher is teaching a class, user can not delete it. With the user does n
 Once the teacher doesn't have any class can be deleted.
 
 ##### See classes of Person
+
 Only in the profile view, the user can see the classes where the user is enroll or the teacher is teaching.
 
 <img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/6aa9161b-e40c-4519-bd99-bfce8f47c930">
@@ -62,38 +73,46 @@ As you may notice, there is a diferent view between listing the classes of a tea
 <img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/404097ee-3ef7-4dd9-b251-51c9f3d5cf24">
 
 ## Class
+
 By clicking on the button "classes" in the list peopel view, the user can access to this "section".
 ### List Classes
+
 In this view the user can go back to the list people view, see the selected class profile, add new class and delete one.
 
 <img width="432" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/7f61a4a2-b989-4dfd-8ce9-05b1c7e5edcf">
 
 ### Add
+
 By clicking the button `Teacher` the user can select the teacher for the new class.
 
 <img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/eb19d9d7-720b-4760-971d-3f089c3b6bea">
 
 ### Delete
+
 There is no retrictions for deleting.
 
 <img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/616b589a-36ba-450e-a9f2-4a15021031bb">
 
 ### Class profile
+
 By double clicking on a class in the table list, the user will be able to see the profile of a class.
 
 <img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/aee4d400-ba58-4196-84f0-f24a798bc9a5">
 
 #### Teacher Profile
+
 By clicking the button `Teacher` the user can see the profile of the teacher. The user won't be able to edit, delete or see the classes of the person, if not we colud enter in an infinite loop.
 
 <img width="431" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/341a9d5e-5360-4fbe-a47d-e5dae68358a3">
 
 #### Student Profile
+
 By double clicking in a student of the table list the profile of the student, with the same restrictions as in the view teacher profile.
 
 <img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/fcf9647a-f60a-4749-af11-1a67a9451508">
 
 #### Add Student
+
 The user can not select a student that its already in the class.
 
 <img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/325e8add-c3d3-4f13-97aa-8c90f9e959a8">
@@ -115,15 +134,19 @@ The user can not select a student that its already in the class.
 <img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/d1f43da1-3a9e-48e3-a2c9-5c047d536be6">
 
 ## Problems Faced
+
 I was a bit lost until I finally understood the Model-View-ViewModel pattern, which I think is very powerfull due to its is easier to implements observers (in my experience). Connecting to the database and creating the scripts was also quite a mess, although I already knew how to make procedures, I had to refresh my mind because has been a year since I didn't do anything. 
 
 My bigest problem was the edit part. Although it updates me the data base, it didn't update me the ViewModel. As i didn't know how to fixed (becouse I was literally changing the element of the observable list) and I was I solved in a simple way but very effective. Instead of just going back in the frames (that was what I was doing), I redirect to the list classes/people view wich will get again from the database the classes/people, that if you remember, I was  updating correctly.
 
 ## Repository Content
+
 This repository contains:
-  - Code of the project
-  - This Readme
-  - All the scripts for the Data Base. As it was my first project making "real" scripts for a data base they are completly desorganized.
+
+- Code of the project
+- This Readme
+- All the scripts for the Data Base. As it was my first project making "real" scripts for a data base they are completly desorganized.
 
 ## Important to know
+
 To use the project is important to connect to the database
