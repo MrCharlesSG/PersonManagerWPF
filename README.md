@@ -1,3 +1,8 @@
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
 # PersonManagerWPF
 Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor Daniel Bele.
 ## Functionalities
