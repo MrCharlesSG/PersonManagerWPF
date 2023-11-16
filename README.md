@@ -1,20 +1,102 @@
 # PersonManagerWPF
-Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern.
+Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor Daniel Bele.
 ## Functionalities
 The correct name of the application would be something like school manager, because user are able, not only to manage people information, but also the classes the organization has, an the rellations classes-person.
 ### Person
 #### List People
-In the app, user is able to list all the people inside the application. User can list all students, employees, teachers and all people.
+In the app, user is able to list all the people inside the application. User can list all students, employees, teachers and all people. As you can see, when user hovers the email, the image of the person is shown.
 
-<img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/9be5abd4-30e6-49f0-9b17-35707bb657f5">
-<img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/ad4fd461-8a75-4042-83c6-500daf27ac4d">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/92f6b459-f2c9-4465-8885-bf8e794a7fc7">
+<img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/c36572d6-3dfa-4871-a100-941bf6ec7107">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/3325ddd8-9eae-4e79-82f7-c820632adcf3">
 
-#### See Person Profile
+#### Add Person
+The only restriction the user has, is that every texbox should be filled with the correct type (there is also an email checker).
+
+<img width="432" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/2b09d46f-18f0-4c3b-9996-c5432112a10a">
+<img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/64895186-b953-49a8-82fb-b83ebc13df96">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/181b81de-3473-4436-9ba4-5b6d4e503ced">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/407a9b40-7ccf-4134-905c-ffd388b76ab1">
+
+
+#### Person Profile
 By Double Click on an element of the list, user will see al the atributes of the selected-person. In that view the user can edit, delete or see the classes of the person. In every view but the list people view, there is a button to go back.
 
-<img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/0e6f98cb-a147-4c9e-88e7-fc9f937be161">
+<img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/f3ac6cd1-c97d-4c91-b9b0-1985505bc69c">
 
-#### Edit Person
+##### Edit Person
 In the profile person view and in the list people view the user can edit the selected person.
 
-<img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/e5a359ae-2bc6-429d-8f43-05706ae2c0ee">
+<img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/dfd5e4ff-2669-4116-b8be-65c8df227c52">
+<img width="432" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/6e9fc363-73af-4b72-b59f-feef869ab591">
+<img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/2da298fe-7270-43a7-8c93-ac15f4bf5966">
+
+##### Delete Person
+In the profile view user is also able to delete selected person. Can also be done through the list people view.
+
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/3ca61b23-a69c-4863-a894-2d0915874b48">
+
+If the teacher is teaching a class, user can not delete it. With the user does no happend the same.
+
+<img width="412" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/f9691fe8-5b2e-4a1c-9540-b2a9955c80ab">
+
+Once the teacher doesn't have any class can be deleted.
+
+##### See classes of Person
+Only in the profile view, the user can see the classes where the user is enroll or the teacher is teaching.
+
+<img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/6aa9161b-e40c-4519-bd99-bfce8f47c930">
+<img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/2e73536d-a5fe-4e52-b9c7-e9b712a9dd1c">
+<img width="438" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/85a429e6-68aa-4767-a08d-8c0ac8ad1531">
+
+As you may notice, there is a diferent view between listing the classes of a teacher and a student:
+  - From teacher, user can manage classes as normally (adding and deleting from general).
+  - From student, user can add the student to a existing or delete from one. The next images show how it works only for this "section".
+
+<img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/2cd56b0c-2b69-4134-a709-231f3231b2a4">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/5e4b547a-e552-42b6-ba42-85cd86d8c8b9">
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/d8314904-e525-4bd2-9114-ac1130c26a8e">
+<img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/3acc45f7-007e-4c9d-9512-081fdd4af978">
+
+<img width="437" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/84a62615-d64e-47bb-8a52-fdcd66316063">
+<img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/404097ee-3ef7-4dd9-b251-51c9f3d5cf24">
+
+## Class
+By clicking on the button "classes" in the list peopel view, the user can access to this "section".
+### List Classes
+In this view the user can go back to the list people view, see the selected class profile, add new class and delete one.
+
+<img width="432" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/7f61a4a2-b989-4dfd-8ce9-05b1c7e5edcf">
+
+### Add
+By clicking the button `Teacher` the user can select the teacher for the new class.
+
+<img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/eb19d9d7-720b-4760-971d-3f089c3b6bea">
+
+### Delete
+There is no retrictions for deleting.
+<img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/616b589a-36ba-450e-a9f2-4a15021031bb">
+
+### Class profile
+By double clicking on a class in the table list, the user will be able to see the profile of a class.
+
+<img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/aee4d400-ba58-4196-84f0-f24a798bc9a5">
+
+#### Teacher Profile
+By clicking the button `Teacher` the user can see the profile of the teacher. The user won't be able to edit, delete or see the classes of the person, if not we colud enter in an infinite loop.
+
+<img width="431" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/341a9d5e-5360-4fbe-a47d-e5dae68358a3">
+
+#### Student Profile
+By double clicking in a student of the table list the profile of the student, with the same restrictions as in the view teacher profile.
+
+<img width="436" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/fcf9647a-f60a-4749-af11-1a67a9451508">
+
+#### Add Student
+The user can not select a student that its already in the class.
+
+<img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/325e8add-c3d3-4f13-97aa-8c90f9e959a8">
+<img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/9ad4a44f-d20d-4b47-a238-30ffc3c408c3">
+<img width="407" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/49777cac-3626-479b-a836-02f5c3eee5b5">
+
+
