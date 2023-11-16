@@ -35,26 +35,26 @@ namespace PersonManager
             InitializeComponent();
             Person = person ?? new Person();
             InitializeCommonInterface(person);
-            InitializeSpecitalitation();
+            InitializeSpecitalitation(person);
         }
 
         private void InitializeCommonInterface(Person? person)
         {
-            tbAge.Text = Person == null ? "" : person!.Age.ToString();
-            tbEmail.Text = Person == null ? "" : person!.Email;
-            tbFirstName.Text = Person == null ? "" : person!.FirstName;
-            tbLastName.Text = Person == null ? "" : person!.LastName;
-            picture.Source = Person == null ? null : ImageUtils.ByteArrayToBitmapImage(person!.Picture!);
+            tbAge.Text = person == null ? "" : person.Age.ToString();
+            tbEmail.Text = person == null ? "" : person.Email;
+            tbFirstName.Text = person == null ? "" : person.FirstName;
+            tbLastName.Text = person == null ? "" : person.LastName;
+            picture.Source = person == null ? null : ImageUtils.ByteArrayToBitmapImage(person.Picture!);
         }
 
-        private void InitializeSpecitalitation()
+        private void InitializeSpecitalitation(Person? person)
         {
-            if( Person != null )
+            if( person != null )
             {
                 DisableCheckBoxes();
-                if(Person is Student )
+                if(person is Student )
                     SetStudentInterface((Student)Person);
-                else if( Person is Teacher )
+                else if( person is Teacher )
                     SetTeacherInterface((Teacher)Person);
                 else
                     SetEmployeeInterface((Employee)Person);
