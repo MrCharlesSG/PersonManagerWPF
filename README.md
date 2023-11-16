@@ -1,5 +1,5 @@
 # PersonManagerWPF
-Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor **Daniel Bele**.
+Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a person management application. It uses the WPF framework with the Model-View-ViewModel Pattern. As other projects of the Accessing Data From Program Code subject, part of the code is done by the proffesor **Daniel Bele**. For the server and database I use Azure.
 ## Functionalities
 The correct name of the application would be something like school manager, because user are able, not only to manage people information, but also the classes the organization has, an the rellations classes-person.
 ### Person
@@ -124,3 +124,6 @@ This repository contains:
   - Code of the project
   - This Readme
   - All the scripts for the Data Base. As it was my first project making "real" scripts for a data base they are completly desorganized.
+
+## Important to know
+To use the project is important to connect to the database
