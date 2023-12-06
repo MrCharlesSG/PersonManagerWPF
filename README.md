@@ -19,6 +19,7 @@
          - [Add Student](#add-student)
          - [Delete Student](#delete-student)
          - [Edit Class](#edit-class)
+   * [Entity-Relationship Diagram](#entity-relationship-diagram)
    * [Problems Faced](#problems-faced)
    * [Repository Content](#repository-content)
    * [Important to know](#important-to-know)
@@ -178,6 +179,9 @@ The user can not select a student that its already in the class.
 <img width="435" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/cbe190ce-c931-4d0d-acca-2db0f447239b">
 <img width="433" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/e805f540-c6fe-4479-b055-6c86cb0a82cf">
 <img width="434" alt="image" src="https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/d1f43da1-3a9e-48e3-a2c9-5c047d536be6">
+
+<!-- TOC --><a name="entity-relationship-diagram"></a>
+## Entity-Relationship Diagram
 
 <!-- TOC --><a name="problems-faced"></a>
 ## Problems Faced
