@@ -183,6 +183,8 @@ The user can not select a student that its already in the class.
 <!-- TOC --><a name="entity-relationship-diagram"></a>
 ## Entity-Relationship Diagram
 
+![PersonManagerER](https://github.com/MrCharlesSG/PersonManagerWPF/assets/94635721/66dbbc48-37f7-497a-b69a-0c556a3f81ab)
+
 <!-- TOC --><a name="problems-faced"></a>
 ## Problems Faced
 
